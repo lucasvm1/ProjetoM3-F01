@@ -9,7 +9,7 @@
 </head>
 <body>
     <section class="Home">
-      <div class="Home__header Header">
+      <header class="Home__header Header">
         <div class="row">
           <div class="Header__logo Logo">
             <img
@@ -32,8 +32,33 @@
             </div>
           </div>
         </div>
-      </div>
+      </header>
       
+      <section class="button-modal-create">
+        <button type="button" onclick="abrirModalCadastro()"> Cadastrar Paleta </button>
+      </section>
+
+      <section class="modal-overlay" id="overlay">
+        <div class="card-modal">
+          <div class="modal-header">
+            <h2>Cadastrar uma Paleta</h2>
+            <a class="close-modal" onclick="fecharModalCadastro()">X</a>
+          </div>
+          
+          <div class="modal-body">
+
+            <form action="">
+              <input type="text" name="sabor" id="sabor" placeholder="Sabor da Paleta">
+              <input type="text" name="preco" id="preco" placeholder="Preço da Paleta">
+              <textarea type="text" name="descricao" id="descricao" placeholder="Descrição da Paleta" rows="5"></textarea>
+              <input type="text" name="foto" id="foto" placeholder="Sabor da Paleta">
+              <button type="submit"> Cadastrar </button>
+            </form>
+
+          </div>         
+        </div>        
+      </section>
+
       <h2>Pesquisar Paleta</h2>
       <div class="paleta-escolhida-espaco">
           <div id="paleta-escolhida-input-espaco">

@@ -39,3 +39,11 @@ async function findByIdPaletas(){
 }
 
 findAllPaletas();
+
+function abrirModalCadastro(){
+    const modal = document.querySelector(".modal-overlay").style.display = "flex";
+}
+
+function fecharModalCadastro(){
+    const modal = document.querySelector(".modal-overlay").style.display = "none";
+}
